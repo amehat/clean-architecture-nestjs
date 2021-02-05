@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": "./",
+        "outDir": "./dist",
+        "emitDecoratorMetadata": true,
+        "esModuleInterop": true,
+        "target": "es2019",
+        "module": "commonjs",
+        "experimentalDecorators": true,
+        "jsx": "preserve",
+        "strict": true,
+        "strictPropertyInitialization": false,
+        "paths": {}
+    },
+    "exclude": ["*/node_modules"]
+}
