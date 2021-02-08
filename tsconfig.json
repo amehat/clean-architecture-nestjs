@@ -11,7 +11,11 @@
         "jsx": "preserve",
         "strict": true,
         "strictPropertyInitialization": false,
-        "paths": {}
+        "resolveJsonModule": true,
+        "paths": {
+            "use-case/*": ["src/use-case"],
+            "infrastructure/*": ["src/infrastructure"]
+        }
     },
     "exclude": ["*/node_modules"]
 }
