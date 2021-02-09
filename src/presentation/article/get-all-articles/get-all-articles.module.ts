@@ -1,6 +1,6 @@
 import { Module } from "@nestjs/common";
 
-import ArticleListMemory from "../../../infrastructure/page/repository/article-list-memory.repository";
+import ArticleListMemory from "../../../infrastructure/article/repository/article-list-memory.repository";
 import GetAllArticlesController from "./get-all-articles.controller";
 
 @Module({
