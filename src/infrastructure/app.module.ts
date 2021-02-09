@@ -1,8 +1,8 @@
 import { Module } from "@nestjs/common";
-import CreateArticleModule from "./page/create-article/create-article.module";
+import CreateArticleModule from "../presentation/page/create-page/create-article.module";
 
 import AppController from "../app.controller";
-import GetAllArticlesModule from "./page/get-all-articles/get-all-articles.module";
+import GetAllArticlesModule from "../presentation/page/get-all-articles/get-all-articles.module";
 
 @Module({
     controllers: [AppController],
