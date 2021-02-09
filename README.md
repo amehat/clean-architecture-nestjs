@@ -10,6 +10,21 @@ The application is accessible as an API.
 - http://localhost:3000/articles?format=json
 - http://localhost:3000/articles?format=html
 
+**POST**
+- http://localhost:3000/articles
+- http://localhost:3000/articles?format=json
+- http://localhost:3000/articles?format=html
+
+  JSON in body raw: 
+  ```
+  {
+      slug: string,
+      title: string,
+      description: string,
+      content: string
+  }
+  ```
+
 ## USE
 
 Install
