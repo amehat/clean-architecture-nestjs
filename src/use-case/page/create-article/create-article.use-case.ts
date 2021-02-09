@@ -11,7 +11,7 @@ export default class CreatePage {
         private readonly articleList: ArticleList
     ) {}
 
-    async execute(articleRequest: CreateArticleRequest, createArticlePresenter: any): Promise<void> {
+    async execute(articleRequest: CreateArticleRequest, createArticlePresenter: CreateArticlePresenter): Promise<void> {
         const response = createArticlePresenter.response;
 
         const article = await this.articleList.create(articleRequest);

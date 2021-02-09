@@ -1,6 +1,7 @@
+import GetAllArticlesResponse from "../get-all-articles.response";
 export default interface GetAllArticlesPresenter {
     response: any;
-    constructor(response: any): void;
-    present(response: any): void;
-    viewModel(): any;
+    constructor(response: GetAllArticlesResponse): void;
+    present(response: GetAllArticlesResponse): void;
+    viewModel(): GetAllArticlesResponse;
 }

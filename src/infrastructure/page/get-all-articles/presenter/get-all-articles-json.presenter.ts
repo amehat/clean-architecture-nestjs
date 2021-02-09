@@ -1,18 +1,19 @@
+import GetAllArticlesResponse from "../../../use-case/page/get-all-articles/get-all-articles.response";
 import GetAllArticlesPresenter from "../../../use-case/page/get-all-articles/get-all-pages.presenter";
 import CreateArticlesResponse from "../../../use-case/page/get-all-articles/interface/get-all-pages.response";
 
 export default class GetAllArticlesJsonPresenter implements GetAllArticlesPresenter {
     public response;
 
-    constructor(response: any) {
+    constructor(response: GetAllArticlesResponse) {
         this.response = response;
     }
     
-    viewModel() {
+    viewModel(): GetAllArticlesResponse {
         return this.response;
     }
 
-    present(response: any) {
-        this.response;
+    present(response: GetAllArticlesResponse) {
+        this.response = response;
     }
 }

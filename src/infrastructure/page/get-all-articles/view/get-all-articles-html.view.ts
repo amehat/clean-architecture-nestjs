@@ -1,6 +1,8 @@
+import Article from "../../../../use-case/page/entity/article";
+
 export default class GetAllArticlesView {
-    render(content: any) {
-        const li = Object.values(content).map((data: any) =>  `<li id="${data.slug}">
+    render(content: Article): string {
+        const li = Object.values(content).map((data: Article) =>  `<li id="${data.slug}">
           <div>
             <span class="label">title:</span>
             <span class="value">${data.title}</span>

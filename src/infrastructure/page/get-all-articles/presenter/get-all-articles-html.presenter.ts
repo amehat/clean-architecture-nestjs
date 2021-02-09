@@ -4,15 +4,15 @@ import GetAllArticlesResponse from "../../../use-case/page/get-all-articles/inte
 export default class GetAllArticlesHtmlPresenter implements GetAllArticlesPresenter {
     public response;
 
-    constructor(response: any) {
+    constructor(response: GetAllArticlesResponse) {
         this.response = response;
     }
     
-    viewModel() {
+    viewModel(): GetAllArticlesResponse {
         return this.response;
     }
 
-    present(response: any) {
+    present(response: GetAllArticlesResponse): void {
         this.response = JSON.parse(JSON.stringify(response));
     }
 }
