@@ -1,13 +1,13 @@
 import { Controller, Get, Query, Inject } from "@nestjs/common";
 
-import GetAllArticles from "../../../use-case/page/get-all-articles/get-all-articles.use-case";
-import GetAllArticlesResponse from "../../../use-case/page/get-all-articles/get-all-articles.response";
-import GetAllArticlesRequest from "../../../use-case/page/get-all-articles/get-all-articles.request";
+import GetAllArticles from "../../../use-case/article/get-all-articles/get-all-articles.use-case";
+import GetAllArticlesResponse from "../../../use-case/article/get-all-articles/get-all-articles.response";
+import GetAllArticlesRequest from "../../../use-case/article/get-all-articles/get-all-articles.request";
 import GetAllArticlesJsonPresenter from "./presenter/get-all-articles-json.presenter";
 import GetAllArticlesJsonView from "./view/model/get-all-articles-json.view-model";
 import GetAllArticlesHtmlPresenter from "./presenter/get-all-articles-html.presenter";
 import GetAllArticlesHtmlView from "./view/model/get-all-articles-html.view-model";
-import ArticleList from "../../../use-case/page/port/article-list.repository";
+import ArticleList from "../../../use-case/article/port/article-list.repository";
 
 @Controller('articles')
 export default class GetAllArticlesController {

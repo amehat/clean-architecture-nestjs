@@ -1,12 +1,12 @@
 import { Body, Controller, Post, Query, Inject } from "@nestjs/common";
 
-import CreateArticle from "../../../use-case/page/create-article/create-article.use-case";
-import CreateArticleRequest from "../../../use-case/page/create-article/create-article.request";
-import CreateArticleResponse from "../../../use-case/page/create-article/create-article.response";
+import CreateArticle from "../../../use-case/article/create-article/create-article.use-case";
+import CreateArticleRequest from "../../../use-case/article/create-article/create-article.request";
+import CreateArticleResponse from "../../../use-case/article/create-article/create-article.response";
 import CreateArticleJsonPresenter from "./presenter/create-article-json.presenter";
 import CreateArticleJsonView from "./view/create-article-json.view";
-import ArticleList from "../../../use-case/page/port/article-list.repository";
-import Article from "../../../use-case/page/entity/article";
+import ArticleList from "../../../use-case/article/port/article-list.repository";
+import Article from "../../../use-case/article/entity/article";
 
 
 @Controller('articles')

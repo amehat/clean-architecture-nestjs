@@ -1,4 +1,4 @@
-import Article from "../../../../use-case/page/entity/article";
+import Article from "../../../../use-case/article/entity/article";
 
 export default class GetAllArticlesView {
     render(content: Article): string {

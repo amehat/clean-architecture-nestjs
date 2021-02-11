@@ -15,6 +15,7 @@ export default class CreatePage {
         const response = createArticlePresenter.response;
 
         const article = await this.articleList.create(articleRequest);
+
         if (article !== undefined) {
             response.article = article;
         } else {

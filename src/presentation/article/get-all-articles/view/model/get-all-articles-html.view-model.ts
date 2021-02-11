@@ -1,4 +1,4 @@
-import Article from '../../../../../use-case/page/entity/article';
+import Article from '../../../../../use-case/article/entity/article';
 import GetAllArticlesHtmlView from '../get-all-articles-html.view';
 
 export default class GetAllArticlesHtmlViewModel {

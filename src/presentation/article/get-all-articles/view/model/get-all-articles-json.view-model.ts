@@ -1,4 +1,4 @@
-import Article from "../../../../../use-case/page/entity/article";
+import Article from "../../../../../use-case/article/entity/article";
 import PaginationView from "../../../../../shared/json/pagination.view"
 
 export default class GetAllArticlesJsonView {
