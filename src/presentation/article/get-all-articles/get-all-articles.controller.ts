@@ -17,7 +17,7 @@ export default class GetAllArticlesController {
     ) {}
 
     @Get()
-    async index(@Query('format') format: string) {
+    async index(@Query('format') format: string, @Query('page') page: number) {
         const request = new GetAllArticlesRequest();
         let presenter;
         let view;
@@ -29,7 +29,7 @@ export default class GetAllArticlesController {
                 break;
             default:
                 presenter = new GetAllArticlesJsonPresenter(new GetAllArticlesResponse());
-                view = new GetAllArticlesJsonView();
+                view = new GetAllArticlesJsonView(page);
                 break;
         }
 
