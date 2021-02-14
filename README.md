@@ -8,6 +8,7 @@ The application is accessible as an API.
 **GET**
 - http://localhost:3000/articles
 - http://localhost:3000/articles?format=json
+- http://localhost:3000/articles?format=json&page=1
 - http://localhost:3000/articles?format=html
 
 **POST**
@@ -15,7 +16,7 @@ The application is accessible as an API.
 - http://localhost:3000/articles?format=json
 - http://localhost:3000/articles?format=html
 
-  JSON in body raw: 
+  JSON in body raw:
   ```
   {
       slug: string,
