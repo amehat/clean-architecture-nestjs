@@ -13,7 +13,7 @@ export default class GetAllArticlesUseCase {
     async execute(request: GetAllArticlesRequest, presenter: GetAllArticlesPresenter): Promise<void> {
         const {} = request;
         const response = presenter.response;
-        response.articles = await this.articleList.get();
+        response.articles = await this.articleList.getAll();
 
         presenter.present(response);
     }

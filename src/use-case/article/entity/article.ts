@@ -1,5 +1,6 @@
 export default class Article {
-    slug: string; // unique id
+    id: string; // unique id
+    slug: string; // business id
     title: string;
     description: string;
     content: string;
