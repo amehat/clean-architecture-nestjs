@@ -1,4 +1,4 @@
-import Article from "src/use-case/article/entity/article";
+import Article from "../../../../use-case/article/entity/article";
 import DeleteArticleHtmlView from "../delete-article-html.view";
 
 export default class DeleteArticleHtmlViewModel {
