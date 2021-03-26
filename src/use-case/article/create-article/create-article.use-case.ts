@@ -12,7 +12,7 @@ export default class CreatePage {
     ) {}
 
     async execute(articleRequest: CreateArticleRequest, createArticlePresenter: CreateArticlePresenter): Promise<void> {
-        const response = createArticlePresenter.response;
+        const { response } = createArticlePresenter;
 
         const article = await this.articleList.create(articleRequest);
 

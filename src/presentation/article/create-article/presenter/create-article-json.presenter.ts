@@ -1,14 +1,13 @@
-import CreateArticlePresenter from "use-case/create-article/create-article.presenter";
-import CreateArticleResponse from "use-case/create-article/interface/create-article.response";
-
+import CreateArticlePresenter from '../../../../use-case/article/create-article/create-article.presenter';
+import CreateArticleResponse from '../../../../use-case/article/create-article/create-article.response';
 export default class CreateArticleJsonPresenter implements CreateArticlePresenter {
-    public response;
+    public response: CreateArticleResponse;
 
-    constructor(response: any) {
+    constructor(response: CreateArticleResponse) {
         this.response = response;
     }
-    
-    viewModel() {
+
+    viewModel(): CreateArticleResponse {
         return this.response;
     }
 }

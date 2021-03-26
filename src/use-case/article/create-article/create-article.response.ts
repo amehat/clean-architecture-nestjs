@@ -1,4 +1,6 @@
+import Article from "../entity/article";
+
 export default class CreatePageResponse {
-    public page: { name: string; id: string }[];
+    public article: Article;
     public errors: string[];
 }
