@@ -1,6 +1,6 @@
 # CLEAN ARCHITECTURE NESTJS
 
-This repository is an example of an implementation of a Clean Arcitecture type architecture with the Typescript NestJS framework.
+This repository is an example of an implementation of a Clean Architecture type architecture with the Typescript NestJS framework.
 The application is accessible as an API.
 
 ## ROUTES
@@ -26,7 +26,7 @@ The application is accessible as an API.
   }
   ```
 
-## USE
+## USAGE
 
 Install
 ```
@@ -35,7 +35,7 @@ yarn or npm i
 
 Start in development mode
 ```
-yarn dev or npm run run dev
+yarn dev or npm run dev
 ```
 
 Build the app
