@@ -11,13 +11,8 @@ export default class CreateArticle {
         private readonly articleList: ArticleList
     ) {}
 
-<<<<<<< HEAD
     async execute(articleRequest: CreateArticleRequest, createArticlePresenter: CreateArticlePresenter): Promise<void> {
         const { response } = createArticlePresenter;
-=======
-    async execute(articleRequest: CreateArticleRequest, createArticlePresenter: any): Promise<void> {
-        const response = createArticlePresenter.response;
->>>>>>> 2e5de6b (test: add test on use-case)
 
         const article = await this.articleList.create(articleRequest);
 

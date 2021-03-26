@@ -6,6 +6,7 @@ export default class ArticleListMock implements ArticleList {
     async get(slug?: string): Promise<Article | Article[] | undefined> {
         return slug ? this.store.get(slug) : this.store;
     }
+
     async getAll(): Promise<Article[] | undefined> {
         const articleList: Article[] = [];
         this.store.forEach((article) => {
@@ -14,9 +15,13 @@ export default class ArticleListMock implements ArticleList {
 
         return articleList;
     }
-    async create(article: Article): Promise<{} | Article> {
-        return this.store.set(article.slug, article);
+
+    async create(article: Article): Promise<Article> {
+        this.store.set(article.slug, article);
+
+        return this.store.get(article.slug);
     }
+
     async delete(slug?: string): Promise<void> {
         this.store.delete(slug);
     }

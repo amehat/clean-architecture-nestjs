@@ -1,12 +1,15 @@
 import CreateArticlePresenter from "../create-article.presenter";
 import CreateArticleResponseMock from "./create-article-response.mock";
+import CreateArticleResponse from '../create-article.response';
 
 export default class CreateArticlePresenterJson implements CreateArticlePresenter {
-    response: any;
-    constructor(response: CreateArticleResponseMock) {
+    response: CreateArticleResponse;
+
+    constructor(response: CreateArticleResponse) {
         this.response = response;
     }
-    viewModel() {
+
+    viewModel(): CreateArticleResponse {
         return this.response;
     }
 }
