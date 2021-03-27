@@ -5,7 +5,7 @@ import CreateArticlePresenter from "./create-article.presenter";
 import CreateArticleRequest from "./create-article.request";
 import CreateArticleResponse from "./create-article.response";
 
-export default class CreatePage {
+export default class CreateArticle {
     constructor(
         @Inject('ArticleList')
         private readonly articleList: ArticleList

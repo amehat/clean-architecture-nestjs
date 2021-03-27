@@ -13,24 +13,21 @@ export default class DeleteArticle {
     async execute(request: DeleteArticleRequest, presenter: DeleteArticlesPresenter) {
         const { slug } = request;
         const response = presenter.response;
-        await this.articleList.delete(slug);
-
         if ((await this.articleList.get(slug)) === undefined) {
-            response.errors = {
-                status: false,
-                messages: [
-                    `Article "${slug}" has been deleted successfully.`
-                ]
-            };
-        } else {
             response.errors = {
                 status: true,
                 messages: [
                     `Article "${slug}" was not deleted.`
                 ]
             };
+        } else {
+          await this.articleList.delete(slug);
+            response.errors = {
+                status: false,
+                messages: [
+                    `Article "${slug}" has been deleted successfully.`
+                ]
+            };
         }
-
-        presenter.present(response);
     }
 }

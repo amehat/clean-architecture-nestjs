@@ -1,18 +1,18 @@
-import deletteArticlesResponse from "../../../../use-case/article/delete-article/delette-articles.response";
+import deleteArticlesResponse from "../../../../use-case/article/delete-article/delette-articles.response";
 import DeleteArticlesPresenter from "../../../../use-case/article/delete-article/port/delete-articles.presenter";
 
 export default class DeleteArticleJsonPresenter implements DeleteArticlesPresenter {
-    response: deletteArticlesResponse;
+    response: deleteArticlesResponse;
 
-    constructor(response: deletteArticlesResponse): void {
+    constructor(response: deleteArticlesResponse): void {
         this.response = response;
     }
 
-    viewModel(): deletteArticlesResponse {
+    viewModel(): deleteArticlesResponse {
         return this.response;
     }
 
-    present(response: deletteArticlesResponse): void {
+    present(response: deleteArticlesResponse): void {
          this.response = response;
     }
 }

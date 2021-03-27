@@ -12,8 +12,4 @@ export default class GetAllArticlesJsonPresenter implements GetAllArticlesPresen
     viewModel(): GetAllArticlesResponse {
         return this.response;
     }
-
-    present(response: GetAllArticlesResponse) {
-        this.response = response;
-    }
 }
