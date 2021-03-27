@@ -1,4 +1,6 @@
+import Article from '../entity/article';
+
 export default class GetAllArticlesResponse {
-    public articles: { slug: string; title: string; description?: string; content: string }[];
+    public articles: Article[];
     public errors: string[];
 }

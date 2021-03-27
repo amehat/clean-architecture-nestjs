@@ -9,10 +9,6 @@ export default class GetAllArticlesHtmlPresenter implements GetAllArticlesPresen
     }
     
     viewModel(): GetAllArticlesResponse {
-        return this.response;
-    }
-
-    present(response: GetAllArticlesResponse): void {
-        this.response = JSON.parse(JSON.stringify(response));
+        return JSON.parse(JSON.stringify(this.response));
     }
 }

@@ -1,5 +1,4 @@
 import CreateArticlePresenter from "../create-article.presenter";
-import CreateArticleResponseMock from "./create-article-response.mock";
 import CreateArticleResponse from '../create-article.response';
 
 export default class CreateArticlePresenterJson implements CreateArticlePresenter {
